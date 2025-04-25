@@ -1,0 +1,129 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+nav {
+  background-color: #222;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #ff3b3b; /* Red font */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #fff; /* Turns white on hover or active */
+  border-bottom: 2px solid #fff;
+}
+
+
+nav ul li a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #fff;
+}
+
+section {
+  padding: 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+.storyboard-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.storyboard-images img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(255, 59, 59, 0.4);
+}
+
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .storyboard-images img {
+    max-width: 90%;
+    margin: 10px 0;
+  }
+
+  iframe {
+    width: 100% !important;
+    height: auto;
+  }
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ff3b3b; /* Vibrant red */
+}
+
+h1, h2, h3, h4, h5, h6, nav ul li a {
+  text-shadow: 0 0 4px #131212;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #ff6600; /* Bright orange-red */
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 20px 0;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(255, 102, 0, 0.6);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.download-btn:hover {
+  background-color: #e65c00; /* Slightly darker shade on hover */
+  transform: scale(1.05);
+}
+
+
+.test-prototype-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #ff6600; /* Bright orange-red */
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 20px;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(255, 102, 0, 0.6);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.test-prototype-btn:hover {
+  background-color: #e65c00;
+  transform: scale(1.05);
+}
